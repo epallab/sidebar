@@ -1,0 +1,168 @@
+.sidemenu-container {
+  min-height: 50vh;
+  background-color: rgba(255, 255, 255, 0.086);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 0px 20px;
+  overflow: hidden;
+  margin: 0px 20px;
+}
+
+.profile-section {
+  position: relative;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(235, 235, 235, 0.605);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.dp-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+.dp-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+.profile div > div:nth-child(1) {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(179, 179, 179);
+  margin-left: 10px;
+}
+.profile div > div:nth-child(2) {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+
+.collapse {
+  position: absolute;
+  right: -20px;
+  border: none;
+  padding: 0;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.159);
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.collapse:hover {
+  padding: 0px 2px;
+}
+
+.right-section {
+  width: 200px;
+}
+.button-section {
+  margin: 20px 0px;
+  border-bottom: 2px solid rgba(235, 235, 235, 0.605);
+  padding-bottom: 20px;
+}
+.menu-btn {
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 8px 0px;
+  margin: 5px 0px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.1s ease-in-out;
+}
+.btn-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+.btn-icon {
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9em;
+}
+.btn-name {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+}
+
+.menu-btn:hover .btn-name {
+  font-size: 1.25em;
+}
+
+.btn-active {
+  color: rgb(26, 26, 26);
+  background-color: rgb(255, 255, 255);
+}
+.tools {
+  background-color: rgba(255, 255, 255, 0.237);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px 0px;
+  overflow: hidden;
+}
+
+.tool-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+.tool-icon img {
+  background-color: rgb(216, 216, 216);
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 50%;
+}
+.tools-name {
+  font-size: 1.1em;
+  font-weight: 500em;
+  color: white;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 767px) {
+  .tools-name {
+    font-size: 1em;
+  }
+  .tools {
+    padding: 5px 0px;
+  }
+  .tool-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+  }
+  .profile-section {
+    margin-top: 20px;
+  }
+  .button-section {
+    margin: 10px 0px;
+    padding-bottom: 10px;
+  }
+}
